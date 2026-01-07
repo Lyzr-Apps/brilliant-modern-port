@@ -1,0 +1,38 @@
+{
+  "agent_name": "Cost Estimator Agent",
+  "agent_id": "695e3f87571aa23089e7ac01",
+  "agent_purpose": "Calculate accurate cost projections based on architecture and usage parameters using Lyzr pricing matrix",
+  "description": "Cost calculator agent that applies Lyzr pricing to architectures and returns itemized cost breakdowns",
+  "response_schema": {
+    "status": "string (success|error)",
+    "result": {
+      "response": "string",
+      "action_taken": "string (optional)",
+      "data": "object (optional, any structured data)",
+      "suggestions": [
+        "string (optional)"
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string (ISO)"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "response": "I've completed the task you requested",
+      "action_taken": "Processed the input and generated output",
+      "data": {
+        "key": "value"
+      },
+      "suggestions": [
+        "You might also want to try X"
+      ]
+    },
+    "metadata": {
+      "agent_name": "Cost Estimator Agent",
+      "timestamp": "2025-01-15T10:30:00Z"
+    }
+  }
+}

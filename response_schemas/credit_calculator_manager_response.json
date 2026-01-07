@@ -1,0 +1,38 @@
+{
+  "agent_name": "Credit Calculator Manager",
+  "agent_id": "695e3f8e571aa23089e7ac02",
+  "agent_purpose": "Coordinate architecture design and cost calculation, returning aggregated results with architecture recommendations and itemized cost breakdown",
+  "description": "Manager agent that coordinates workflow between architecture designer and cost estimator, returning comprehensive credit calculation results",
+  "response_schema": {
+    "status": "string (success|error)",
+    "result": {
+      "response": "string",
+      "action_taken": "string (optional)",
+      "data": "object (optional, any structured data)",
+      "suggestions": [
+        "string (optional)"
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string (ISO)"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "response": "I've completed the task you requested",
+      "action_taken": "Processed the input and generated output",
+      "data": {
+        "key": "value"
+      },
+      "suggestions": [
+        "You might also want to try X"
+      ]
+    },
+    "metadata": {
+      "agent_name": "Credit Calculator Manager",
+      "timestamp": "2025-01-15T10:30:00Z"
+    }
+  }
+}
