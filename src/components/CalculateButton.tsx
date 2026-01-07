@@ -6,7 +6,7 @@ interface CalculateButtonProps {
   disabled: boolean
 }
 
-export default function CalculateButton({
+function CalculateButton({
   onClick,
   loading,
   disabled,
@@ -32,3 +32,5 @@ export default function CalculateButton({
     </button>
   )
 }
+
+export default CalculateButton

@@ -23,7 +23,7 @@ const COMPONENT_ICONS: { [key: string]: JSX.Element } = {
   'RAI': <FiBox className="w-4 h-4" />,
 }
 
-export default function ArchitectureResults({
+function ArchitectureResults({
   architecture,
 }: ArchitectureResultsProps) {
   const agentCount = architecture.agents.length
@@ -102,3 +102,5 @@ export default function ArchitectureResults({
     </div>
   )
 }
+
+export default ArchitectureResults

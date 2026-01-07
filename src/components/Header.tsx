@@ -1,6 +1,8 @@
+'use client'
+
 import { FiCalculator } from 'react-icons/fi'
 
-export default function Header() {
+function Header() {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -21,3 +23,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

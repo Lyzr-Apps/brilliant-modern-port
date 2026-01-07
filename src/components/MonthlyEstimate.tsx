@@ -7,7 +7,7 @@ interface MonthlyEstimateProps {
   estimate: number
 }
 
-export default function MonthlyEstimate({ estimate }: MonthlyEstimateProps) {
+function MonthlyEstimate({ estimate }: MonthlyEstimateProps) {
   const [showBreakdown, setShowBreakdown] = useState(false)
 
   const formatCurrency = (value: number) => {
@@ -84,3 +84,5 @@ export default function MonthlyEstimate({ estimate }: MonthlyEstimateProps) {
     </div>
   )
 }
+
+export default MonthlyEstimate

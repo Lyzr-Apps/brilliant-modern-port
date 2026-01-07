@@ -18,7 +18,7 @@ interface CostSection {
   color: string
 }
 
-export default function CostBreakdown({ costs }: CostBreakdownProps) {
+function CostBreakdown({ costs }: CostBreakdownProps) {
   const [expanded, setExpanded] = useState<{ [key: string]: boolean }>({
     creation: true,
     operational: true,
@@ -154,3 +154,5 @@ export default function CostBreakdown({ costs }: CostBreakdownProps) {
     </div>
   )
 }
+
+export default CostBreakdown

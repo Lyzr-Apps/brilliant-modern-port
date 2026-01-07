@@ -26,7 +26,7 @@ interface ExportOptionsProps {
   }
 }
 
-export default function ExportOptions({
+function ExportOptions({
   architecture,
   costs,
   inputs,
@@ -197,3 +197,5 @@ export default function ExportOptions({
     </div>
   )
 }
+
+export default ExportOptions

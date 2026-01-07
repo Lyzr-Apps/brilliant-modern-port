@@ -16,7 +16,7 @@ interface UsageParametersPanelProps {
 
 const MODELS = ['GPT-5', 'GPT-5 Mini', 'GPT-5 Nano']
 
-export default function UsageParametersPanel({
+function UsageParametersPanel({
   monthlyCalls,
   onMonthlyCallsChange,
   inputTokens,
@@ -137,3 +137,5 @@ export default function UsageParametersPanel({
     </div>
   )
 }
+
+export default UsageParametersPanel

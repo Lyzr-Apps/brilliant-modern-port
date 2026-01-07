@@ -31,7 +31,7 @@ const EXAMPLE_PROMPTS = [
   },
 ]
 
-export default function ProblemStatementCard({
+function ProblemStatementCard({
   value,
   onChange,
 }: ProblemStatementCardProps) {
@@ -116,3 +116,5 @@ export default function ProblemStatementCard({
     </div>
   )
 }
+
+export default ProblemStatementCard
