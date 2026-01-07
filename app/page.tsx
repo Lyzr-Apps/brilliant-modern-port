@@ -19,15 +19,15 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import Header from '@/src/components/Header'
-import ProblemStatementCard from '@/src/components/ProblemStatementCard'
-import UsageParametersPanel from '@/src/components/UsageParametersPanel'
-import CalculateButton from '@/src/components/CalculateButton'
-import ArchitectureResults from '@/src/components/ArchitectureResults'
-import CostBreakdown from '@/src/components/CostBreakdown'
-import MonthlyEstimate from '@/src/components/MonthlyEstimate'
-import ExportOptions from '@/src/components/ExportOptions'
-import { callAgentAPI } from '@/src/lib/api'
+import Header from '@/components/Header'
+import ProblemStatementCard from '@/components/ProblemStatementCard'
+import UsageParametersPanel from '@/components/UsageParametersPanel'
+import CalculateButton from '@/components/CalculateButton'
+import ArchitectureResults from '@/components/ArchitectureResults'
+import CostBreakdown from '@/components/CostBreakdown'
+import MonthlyEstimate from '@/components/MonthlyEstimate'
+import ExportOptions from '@/components/ExportOptions'
+import { callAgentAPI } from '@/lib/api'
 
 interface CostData {
   creationCosts: { [key: string]: number }
